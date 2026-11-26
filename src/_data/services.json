@@ -1,0 +1,38 @@
+[
+  {
+    "id": "performance",
+    "title": "Performance",
+    "subtitle": "Know what your engine is doing.",
+    "tile": "red",
+    "items": [
+      { "name": "Boost, oil pressure & temp gauges", "note": "Supply & install", "price": "from $700" },
+      { "name": "Wideband AFR & EGT sensors", "note": "Supply & install", "price": "from $250" },
+      { "name": "Shift lights", "note": "Supply & install", "price": "from $200" },
+      { "name": "Digital dashes & data logging", "price": "quote" }
+    ]
+  },
+  {
+    "id": "audio",
+    "title": "Sound systems",
+    "subtitle": "Better sound for any car.",
+    "tile": "yellow",
+    "items": [
+      { "name": "Head units (CarPlay / Android Auto)", "price": "from [PRICE]" },
+      { "name": "Speaker upgrades", "price": "from [PRICE]" },
+      { "name": "Amplifiers & subwoofers", "price": "from [PRICE]" },
+      { "name": "DSP tuning & sound deadening", "price": "from [PRICE]" }
+    ]
+  },
+  {
+    "id": "electrical",
+    "title": "Auto electrical",
+    "subtitle": "Everyday repairs, any make.",
+    "tile": "white",
+    "items": [
+      { "name": "Diagnostics & fault finding", "price": "from [PRICE]" },
+      { "name": "Batteries, alternators & starters", "price": "from [PRICE]" },
+      { "name": "Wiring repairs", "price": "quote" },
+      { "name": "Lighting, cameras & accessories", "price": "from [PRICE]" }
+    ]
+  }
+]

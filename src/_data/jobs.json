@@ -1,0 +1,56 @@
+[
+  {
+    "type": "performance",
+    "tag": "Performance",
+    "title": "Triple gauge A-pillar pod",
+    "vehicle": "[YEAR MAKE MODEL]",
+    "description": "Boost, oil pressure and AFR gauges with sandwich plate and wideband sensor.",
+    "photo": "",
+    "photoAlt": ""
+  },
+  {
+    "type": "sound",
+    "tag": "Sound system",
+    "title": "Amp & sub stealth boot build",
+    "vehicle": "[YEAR MAKE MODEL]",
+    "description": "Four-channel amp, under-floor sub enclosure and full power and ground run.",
+    "photo": "",
+    "photoAlt": ""
+  },
+  {
+    "type": "performance",
+    "tag": "Performance",
+    "title": "Shift light & data logger",
+    "vehicle": "[YEAR MAKE MODEL]",
+    "description": "Progressive shift light and logger wired to the ECU for track days.",
+    "photo": "",
+    "photoAlt": ""
+  },
+  {
+    "type": "sound",
+    "tag": "Sound system",
+    "title": "CarPlay head unit upgrade",
+    "vehicle": "[YEAR MAKE MODEL]",
+    "description": "Wireless CarPlay unit with steering controls and reverse camera retained.",
+    "photo": "",
+    "photoAlt": ""
+  },
+  {
+    "type": "electrical",
+    "tag": "Auto electrical",
+    "title": "Engine swap wiring",
+    "vehicle": "[YEAR MAKE MODEL]",
+    "description": "Loom modified and rerouted for an engine conversion, fully labelled.",
+    "photo": "",
+    "photoAlt": ""
+  },
+  {
+    "type": "performance",
+    "tag": "Performance",
+    "title": "Digital dash install",
+    "vehicle": "[YEAR MAKE MODEL]",
+    "description": "CAN-bus dash with oil, fuel and EGT sensors configured and tested.",
+    "photo": "",
+    "photoAlt": ""
+  }
+]

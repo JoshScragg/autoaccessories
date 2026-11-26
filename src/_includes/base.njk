@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-NZ"{% if noJsClass %} class="no-js"{% endif %}>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- if baseHref %}
+  <base href="{{ site.url | urlPath }}/">
+  {%- endif %}
+  <title>{{ title }}</title>
+  {%- if description %}
+  <meta name="description" content="{{ description }}">
+  {%- endif %}
+  {%- if noindex %}
+  <meta name="robots" content="noindex">
+  {%- endif %}
+  {%- if site.googleVerification and page.url == "/" %}
+  <meta name="google-site-verification" content="{{ site.googleVerification }}">
+  {%- endif %}
+  <meta name="theme-color" content="#121212">
+  {%- if not baseHref %}
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  {%- endif %}
+  <meta property="og:title" content="{{ title }}">
+  {%- if description %}
+  <meta property="og:description" content="{{ description }}">
+  {%- endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:locale" content="en_NZ">
+  <meta property="og:image" content="{{ site.url }}/img/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ site.name }}: Auto electrical for people who love their cars.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  {%- if mainJs %}
+  <script src="js/main.js" defer></script>
+  {%- endif %}
+  {%- if jsonLd %}
+  {% include "jsonld.njk" %}
+  {%- endif %}
+</head>
+<body>
+  <div class="stripe" aria-hidden="true"><span></span><span></span></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="index.html">{{ site.name }} <span>{{ site.tagline }}</span></a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html"{% if page.url == "/" %} aria-current="page"{% endif %}>Home</a></li>
+        <li><a class="nav-link" href="services.html"{% if page.url == "/services.html" %} aria-current="page"{% endif %}>Services</a></li>
+        <li><a class="btn btn-primary btn-nav" href="{% if page.url == '/services.html' %}#quote{% else %}services.html#quote{% endif %}">Get a quote</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+{{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>{{ site.name }}</strong> · {{ site.address }}, {{ site.suburbCity }}</p>
+      {%- if footer == "hours" %}
+      <p>Mon–Fri {{ site.hoursWeekdays }} · Sat {{ site.hoursSaturday }}</p>
+      {%- else %}
+      <p><a class="text-link" href="tel:{{ site.phoneLink }}">{{ site.phone }}</a> · <a class="text-link" href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      {%- endif %}
+    </div>
+  </footer>
+</body>
+</html>

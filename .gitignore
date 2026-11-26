@@ -1,0 +1,13 @@
+# Build output and dependencies
+_site/
+node_modules/
+
+# Local tooling
+.claude/
+*.report.html
+.DS_Store
+
+# Test output
+test-results/
+playwright-report/
+screenshots/

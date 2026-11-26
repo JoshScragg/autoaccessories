@@ -1,0 +1,15 @@
+{
+  "name": "AutoAccessories",
+  "tagline": "Auto Electrical",
+  "url": "https://joshscragg.github.io/autoaccessories",
+  "town": "[TOWN]",
+  "phone": "[YOUR PHONE]",
+  "phoneLink": "[YOUR PHONE]",
+  "email": "[YOUR EMAIL]",
+  "address": "[YOUR ADDRESS]",
+  "suburbCity": "[SUBURB, CITY]",
+  "hoursWeekdays": "[OPENING HOURS]",
+  "hoursSaturday": "[OPENING HOURS]",
+  "formId": "[FORM ID]",
+  "googleVerification": ""
+}
